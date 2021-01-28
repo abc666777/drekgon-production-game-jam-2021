@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float move_Speed;
     private float x_Coordinate;
     private float y_Coordinate;
+    private bool status_Door = false;
     //Cast to npc, door, momento
     public Bag bag;
     public Encyclopedia encyclopedia;
@@ -47,8 +48,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown("o")) {//call Encyclopedia
             encyclopedia.Action_Encyclopedia();
         }
+        if (Input.GetKeyDown(KeyCode.Return) && status_Door)
+        {
+            door.random_Room();
+        }
 
-        
+
     }
 
     void Flip()
@@ -59,11 +64,18 @@ public class Player : MonoBehaviour
         transform.localScale = scaler;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.Return) && other.name == "Door")
+        if(other.name == "Door")
         {
-            door.random_Room();
+            status_Door = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.name == "Door")
+        {
+            status_Door = false;
         }
     }
 
