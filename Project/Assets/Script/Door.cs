@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private List<int> type_Door;//List img
     private double x_Coordinate;
     private double y_Coordinate;
 

@@ -10,10 +10,8 @@ public class Memoto : MonoBehaviour
     //img
 
 
-    void Start(string name, int id)
+    void Start()
     {
-        name_Memoto = name;
-        ID = id;
     }
 
 
