@@ -30,5 +30,6 @@ public class Door : MonoBehaviour
     public void random_Room()//cast player for check press Enter for call this function
     {
         //go to room = Random.Range(0, 10);
+        print("It is a door");
     }
 }

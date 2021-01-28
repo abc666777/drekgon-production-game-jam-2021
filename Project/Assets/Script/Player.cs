@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     //Cast to npc, door, momento
     public Bag bag;
     public Encyclopedia encyclopedia;
+    public Door door;
 
     private float moveinput;
 
@@ -46,6 +47,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown("o")) {//call Encyclopedia
             encyclopedia.Action_Encyclopedia();
         }
+
+        
     }
 
     void Flip()
@@ -55,5 +58,13 @@ public class Player : MonoBehaviour
         scaler.x *= -1;
         transform.localScale = scaler;
     }
-    
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (Input.GetKeyDown(KeyCode.Return) && other.name == "Door")
+        {
+            door.random_Room();
+        }
+    }
+
 }
