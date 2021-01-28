@@ -6,10 +6,12 @@ public class Door : MonoBehaviour
 {
     private double x_Coordinate;
     private double y_Coordinate;
+    private List<Texture> BackgroundList;
 
     void Start()
     {
         //type_Door[Random.Range(0, 10)];
+        BackgroundList = Resources.LoadAll<Texture>("Background").ToList<Texture>();
     }
 
 
