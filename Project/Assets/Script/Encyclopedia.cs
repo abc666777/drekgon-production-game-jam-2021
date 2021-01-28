@@ -6,6 +6,7 @@ public class Encyclopedia : MonoBehaviour
 {
     private List<NPC> Npcs;
     private List<Memoto> Mementos;
+    private bool status_Open = false;
     void Start()
     {
 
@@ -15,13 +16,17 @@ public class Encyclopedia : MonoBehaviour
     {
         
     }
-
-    public void Open_Encyclopedia()
+    public void Action_Encyclopedia()
     {
-        print("Open encyclopedia");
-    }
-    public void Close_Encyclopedia()
-    {
-        print("Close encyclopedia");
+        if (!status_Open)
+        {
+            print("Open encyclopedia");
+            status_Open = !status_Open;
+        }
+        else
+        {
+            print("Close encyclopedia");
+            status_Open = !status_Open;
+        }
     }
 }

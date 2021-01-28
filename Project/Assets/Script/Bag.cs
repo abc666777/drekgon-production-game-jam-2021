@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Bag : MonoBehaviour
 {
-    private List<Memoto> Mementos;
-    private string name;
+    public List<Memoto> Mementos;
+    public string name;
+    public bool status_Open = false;
     void Start()
     {
         this.name = "Hello";
@@ -13,16 +14,21 @@ public class Bag : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(name);
+        //Debug.Log(name);
     }
 
-    public void Open_Bag()
+    public void Action_Bag()
     {
-        print("Open bag");
-    }
-    public void Close_Bag()
-    {
-        print("Close bag");
+        if (!status_Open)
+        {
+            print("Open bag");
+            status_Open = !status_Open;
+        }
+        else
+        {
+            print("Close bag");
+            status_Open = !status_Open;
+        }
     }
 
     public void Set_Mementos(Memoto item)
@@ -41,6 +47,7 @@ public class Bag : MonoBehaviour
             return Mementos[0];
         }
     }
+
     public void Set_Name(string n)
     {
         this.name = n;

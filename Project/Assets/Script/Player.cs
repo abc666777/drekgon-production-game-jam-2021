@@ -7,11 +7,9 @@ public class Player : MonoBehaviour
     public float move_Speed;
     private float x_Coordinate;
     private float y_Coordinate;
-    private bool status_Open_Bag = false;
-    private bool status_Open_Encyclopedia = false;
     //Cast to npc, door, momento
-    private Bag bag = new Bag();
-    private Encyclopedia encyclopedia = new Encyclopedia();
+    public Bag bag;
+    public Encyclopedia encyclopedia;
 
     private float moveinput;
 
@@ -40,8 +38,14 @@ public class Player : MonoBehaviour
             Flip();
         }
 
-        call_Bag();
-        call_Encyclopedia(); 
+
+        if (Input.GetKeyDown("i")) {//call bag
+            bag.Action_Bag();
+        }
+
+        if (Input.GetKeyDown("o")) {//call Encyclopedia
+            encyclopedia.Action_Encyclopedia();
+        }
     }
 
     void Flip()
@@ -52,30 +56,4 @@ public class Player : MonoBehaviour
         transform.localScale = scaler;
     }
     
-    public void call_Bag()//check I button
-    {
-        if (Input.GetKeyDown("i") && !status_Open_Bag)
-        {
-            bag.Open_Bag();
-            status_Open_Bag = !status_Open_Bag;
-        }
-        else if (Input.GetKeyDown("i") && status_Open_Bag)
-        {
-            bag.Close_Bag();
-            status_Open_Bag = !status_Open_Bag;
-        }
-    }
-    public void call_Encyclopedia()//check O button
-    {
-        if (Input.GetKeyDown("o") && !status_Open_Encyclopedia)
-        {
-            encyclopedia.Open_Encyclopedia();
-            status_Open_Encyclopedia = !status_Open_Encyclopedia;
-        }
-        else if (Input.GetKeyDown("o") && status_Open_Encyclopedia)
-        {
-            encyclopedia.Close_Encyclopedia();
-            status_Open_Encyclopedia = !status_Open_Encyclopedia;
-        }
-    }
 }
