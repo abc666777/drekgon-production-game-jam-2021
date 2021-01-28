@@ -4,40 +4,47 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private double move_Speed;
-    private double x_Coordinate;
-    private double y_Coordinate;
+    public float move_Speed;
+    private float x_Coordinate;
+    private float y_Coordinate;
     //Cast to npc, door, momento
+    
+    private float moveinput;
 
+    private Rigidbody2D rb;
+
+    private bool facing = true; //true = right, flast = left
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+    
     void Start()
     {
-        move_Speed = 10;
-        x_Coordinate = 0;
-        y_Coordinate = 0;
+        
     }
 
     void Update()
     {
-
+        moveinput = Input.GetAxis("Horizontal"); // move Horizontal
+        Debug.Log(moveinput);
+        rb.velocity = new Vector2(moveinput * move_Speed, rb.velocity.y);
+        if (facing == true && moveinput < 0) {
+            Flip();
+        }else if (facing == false && moveinput > 0) {
+            Flip();
+        }
     }
 
-    public void move(string direction)
+    void Flip()
     {
-        // if (direction == "East")
-        // {
-        //     x_Coordinate += move_Speed;
-        // }if (direction == "West")
-        // {
-        //     x_Coordinate -= move_Speed;
-        // }if (direction == "North")
-        // {
-        //     y_Coordinate += move_Speed;
-        // }if (direction == "South")
-        // {
-        //     y_Coordinate -= move_Speed;
-        // }
+        facing = !facing;
+        Vector3 scaler = transform.localScale;
+        scaler.x *= -1;
+        transform.localScale = scaler;
     }
-
+    
     public void open_Bag()//check I button
     {
 
