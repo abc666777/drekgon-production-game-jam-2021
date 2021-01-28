@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Door : MonoBehaviour
 {
     private double x_Coordinate;
     private double y_Coordinate;
-    private List<Texture> BackgroundList;
+    private List<Sprite> BackgroundList;
 
     void Start()
     {
-        //type_Door[Random.Range(0, 10)];
-        BackgroundList = Resources.LoadAll<Texture>("Background").ToList<Texture>();
+        BackgroundList = Resources.LoadAll<Sprite>("Background").ToList();
+        GetComponent<SpriteRenderer>().sprite = BackgroundList[(int) Random.Range(0, BackgroundList.Count)];
     }
 
 
