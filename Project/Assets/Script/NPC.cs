@@ -11,6 +11,7 @@ public class NPC : MonoBehaviour
     private Memoto Memoto;
     private Rigidbody2D rb_npc;
     public Door door;
+    public Bag bag;
 
     void Start()
     {

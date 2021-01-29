@@ -6,13 +6,13 @@ public class Bag : MonoBehaviour
 {
     public List<Memoto> Mementos;
     public bool status_Open = false;
+    public bag_bg bg;
     void Start()
     {
     }
 
     void Update()
     {
-        //Debug.Log(name);
     }
 
     public void Action_Bag()
@@ -20,11 +20,13 @@ public class Bag : MonoBehaviour
         if (!status_Open)
         {
             print("Open bag");
+            bg.show_bg();
             status_Open = !status_Open;
         }
         else
         {
             print("Close bag");
+            bg.hide_bg();
             status_Open = !status_Open;
         }
     }

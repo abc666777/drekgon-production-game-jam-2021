@@ -5,11 +5,10 @@ using UnityEngine;
 public class Encyclopedia : MonoBehaviour
 {
     private List<NPC> Npcs;
-    private List<Memoto> Mementos;
     private bool status_Open = false;
     void Start()
     {
-
+        
     }
 
     void Update()
