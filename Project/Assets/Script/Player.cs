@@ -8,10 +8,11 @@ public class Player : MonoBehaviour
     private float x_Coordinate;
     private float y_Coordinate;
     private bool status_Door = false;
-    //Cast to npc, door, momento
+    private bool status_Npc = false;
     public Bag bag;
     public Encyclopedia encyclopedia;
     public Door door;
+    public NPC npc;
 
     private float moveinput;
 
@@ -51,6 +52,15 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) && status_Door)
         {
             door.random_Room();
+            if (door.StatusTalk){
+                rb.position = new Vector3(0, 0, 1);
+                door.StatusTalk = false;
+                npc.Rb_Npc.position = new Vector3(Random.Range(2, 13), -0.16f, 1);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Return) && status_Npc)
+        {
+            npc.talk();
         }
 
 
@@ -69,6 +79,9 @@ public class Player : MonoBehaviour
         if(other.name == "Door")
         {
             status_Door = true;
+        }else if (other.name == "Npc")
+        {
+            status_Npc = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -76,6 +89,9 @@ public class Player : MonoBehaviour
         if (other.name == "Door")
         {
             status_Door = false;
+        }else if (other.name == "Npc")
+        {
+            status_Npc = false;
         }
     }
 

@@ -5,11 +5,9 @@ using UnityEngine;
 public class Bag : MonoBehaviour
 {
     public List<Memoto> Mementos;
-    public string name;
     public bool status_Open = false;
     void Start()
     {
-        this.name = "Hello";
     }
 
     void Update()
@@ -48,13 +46,4 @@ public class Bag : MonoBehaviour
         }
     }
 
-    public void Set_Name(string n)
-    {
-        this.name = n;
-    }
-
-    public string Get_Name()
-    {
-        return name;
-    }
 }

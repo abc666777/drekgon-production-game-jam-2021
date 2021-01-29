@@ -7,13 +7,11 @@ public class Door : MonoBehaviour
 {
     private double x_Coordinate;
     private double y_Coordinate;
-    private List<Sprite> BackgroundList;
+    public Room room;
+    private bool status_talk = false;
 
     void Start()
-    {
-        BackgroundList = Resources.LoadAll<Sprite>("Background").ToList();
-        GetComponent<SpriteRenderer>().sprite = BackgroundList[(int) Random.Range(0, BackgroundList.Count)];
-    }
+    {}
 
 
     void Update()
@@ -29,7 +27,19 @@ public class Door : MonoBehaviour
 
     public void random_Room()//cast player for check press Enter for call this function
     {
-        //go to room = Random.Range(0, 10);
-        print("It is a door");
+        if (status_talk)
+        {
+            print("It is a door");
+            room.random_bg();
+        }
+        else
+        {
+            print("Please Talk Npc before");
+        }
     }
-}
+    public bool StatusTalk { 
+        get { return status_talk; }
+        set { status_talk = value; }
+    }
+
+    }
