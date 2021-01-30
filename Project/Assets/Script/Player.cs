@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        x_Coordinate = rb.position.x;
+        y_Coordinate = rb.position.y;
     }
     
     void Start()
@@ -53,9 +55,9 @@ public class Player : MonoBehaviour
         {
             door.random_Room();
             if (door.StatusTalk){
-                rb.position = new Vector3(0, 0, 1);
+                rb.position = new Vector3(x_Coordinate, y_Coordinate, 1);
                 door.StatusTalk = false;
-                npc.Rb_Npc.position = new Vector3(Random.Range(2, 13), -0.16f, 1);
+                npc.Rb_Npc.position = new Vector3(Random.Range(-0.961f, 5.049f), npc.Rb_Npc.position.y, 1);
             }
         }
         if (Input.GetKeyDown(KeyCode.Return) && status_Npc)
