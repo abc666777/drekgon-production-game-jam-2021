@@ -12,6 +12,7 @@ public class NPC : MonoBehaviour
     private Rigidbody2D rb_npc;
     public Door door;
     public Bag bag;
+    public Player py;
 
     void Start()
     {
