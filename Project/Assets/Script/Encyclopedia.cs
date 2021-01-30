@@ -6,6 +6,8 @@ public class Encyclopedia : MonoBehaviour
 {
     private List<NPC> Npcs;
     private bool status_Open = false;
+    public GameObject encyclopedia_ui;
+    
     void Start()
     {
         
@@ -27,5 +29,6 @@ public class Encyclopedia : MonoBehaviour
             print("Close encyclopedia");
             status_Open = !status_Open;
         }
+        encyclopedia_ui.SetActive(status_Open);
     }
 }

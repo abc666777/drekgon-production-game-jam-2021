@@ -7,12 +7,14 @@ public class NPC : MonoBehaviour
     //img
     private string name_Npc;
     private int ID;
-    private List<string> data_Detail;//get form text data
+    public string[] npc_sentences;
+    private List<string> npc_detail;//get form text data
     private Memoto Memoto;
     private Rigidbody2D rb_npc;
     public Door door;
     public Bag bag;
-    public Player py;
+    public Dialog dialog_box;
+    
 
     void Start()
     {
@@ -35,6 +37,7 @@ public class NPC : MonoBehaviour
     }
     public void talk()
     {
+        dialog_box.StarDialog();
         print("Hi my name is ...");
         door.StatusTalk = true;
     }

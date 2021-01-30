@@ -5,6 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float move_Speed;
+
+    private enum play_status
+    {
+        moving,
+        talking,
+        open_bag,
+        open_encyclopedia
+    };
     private float x_Coordinate;
     private float y_Coordinate;
     private bool status_Door = false;
@@ -13,6 +21,7 @@ public class Player : MonoBehaviour
     public Encyclopedia encyclopedia;
     public Door door;
     public NPC npc;
+    public Dialog dialog_box;
 
     private float moveinput;
 
@@ -64,8 +73,6 @@ public class Player : MonoBehaviour
         {
             npc.talk();
         }
-
-
     }
 
     void Flip()
