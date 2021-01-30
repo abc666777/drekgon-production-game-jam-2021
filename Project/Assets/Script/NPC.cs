@@ -5,16 +5,15 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     //img
-    private string name_Npc;
-    private int ID;
+    public string name_Npc;
+    public int ID;
     public string[] npc_sentences;
-    private List<string> npc_detail;//get form text data
-    private Memoto Memoto;
-    private Rigidbody2D rb_npc;
+    public List<string> conversation;//get form text data
+    public Rigidbody2D rb_npc;
     public Door door;
-    public Bag bag;
+    public Game_System sys;
     public Dialog dialog_box;
-    
+
 
     void Start()
     {
@@ -23,14 +22,13 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
-    public Memoto give_Memento()
+    public void give_Memento()
     {
-        return Memoto;
     }
-    
+
     public void take_Memento()
     {
 
@@ -38,7 +36,7 @@ public class NPC : MonoBehaviour
     public void talk()
     {
         dialog_box.StarDialog();
-        print("Hi my name is ...");
+        print("Hi my name is "+ name_Npc);
         door.StatusTalk = true;
     }
 

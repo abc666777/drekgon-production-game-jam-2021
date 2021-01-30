@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float move_Speed;
+    public Game_System sys;
 
     private enum play_status
     {
@@ -64,6 +65,7 @@ public class Player : MonoBehaviour
         {
             door.random_Room();
             if (door.StatusTalk){
+                sys.ran_npc();
                 rb.position = new Vector3(x_Coordinate, y_Coordinate, 1);
                 door.StatusTalk = false;
                 npc.Rb_Npc.position = new Vector3(Random.Range(-0.961f, 5.049f), npc.Rb_Npc.position.y, 1);
