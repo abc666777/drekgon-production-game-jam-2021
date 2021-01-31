@@ -3,6 +3,6 @@
           "story": "A lost soul, wandering in Empty Space, lost their own identity. Memento is the only thing that they are attached to, so as not to lose their identity over time.",
           "img":"",
           "true_img":"",
-          "command": ["q", "d", "t"],
+          "command": ["q", "y", "t"],
           "conversation": ["I can't remember anythings, could you please give me a Memento please?", "Thank you, I shall not forget this kindness.", "You heartless soul, I wish you would be dead in this rotten place!"]
         }

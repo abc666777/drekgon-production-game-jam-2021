@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Dialog : MonoBehaviour
 {
     public string[] sentences;
     public GameObject dialog_box;
-    public GameObject name;
-    public GameObject text;
+    public TextMeshProUGUI name_n;
+    public TextMeshProUGUI text;
     private bool status_talk = false;
+    private bool stel;
 
     public void StarDialog()
     {
@@ -18,6 +20,7 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stel = true;
     }
 
     // Update is called once per frame
@@ -26,6 +29,16 @@ public class Dialog : MonoBehaviour
         
     }
     public void talking(string txt, string n) {
-        print(n + " : " + txt);
+        if((n == "Mindflayer" || n == "Spacewalker" || n == "Phantom") && stel)
+        {
+            name_n.text = "???";
+            stel = false;
+        }
+        else
+        {
+            stel = true;
+            name_n.text = n;
+        }
+        text.text = txt;
     }
 }

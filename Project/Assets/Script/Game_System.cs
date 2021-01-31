@@ -30,7 +30,6 @@ public class Game_System : MonoBehaviour
 
     void Update()
     {
-        
     }
     public void give_Memento()
     {
@@ -39,9 +38,11 @@ public class Game_System : MonoBehaviour
         mmt.transform.localScale = new Vector3(0.2f, 0.2f, 1);
         int ran = Random.Range(0, mmts.Count);
         mmt.name_Memoto = mmts[ran].name;
+        mmt.name = mmts[ran].name;
         mmt.story = mmts[ran].story;
         mmt.ending = mmts[ran].ending;
         bag.Mementos.Add(mmt);
+        mmts.RemoveAt(ran);
     }
 
     public void take_Memento(string type)
@@ -49,19 +50,17 @@ public class Game_System : MonoBehaviour
         if (bag.Mementos.Count != 0) { 
             if (type == "a")
             {
-                for (int i = 0; i < bag.Mementos.Count; i++)
-                {
-                    Destroy(bag.Mementos[0]);
-                    bag.Mementos.RemoveAt(0);
-                }
+               bag.Mementos.Clear();
+
             }else if (type == "c")
             {
-
+                int ran = Random.Range(0, bag.Mementos.Count);
+                bag.Mementos.RemoveAt(ran);
+                give_Memento();
             }
             else
             {
                 int ran = Random.Range(0, bag.Mementos.Count);
-                Destroy(bag.Mementos[ran]);
                 bag.Mementos.RemoveAt(ran);
             }
         }
@@ -70,19 +69,22 @@ public class Game_System : MonoBehaviour
     public void ran_npc()
     {
         npc.gameObject.SetActive(true);
-        if (count < 11)
+        if (count < 12)
         {
-            set_npc((int)Random.Range(0, 7));
+            int ran = (int)Random.Range(0, 7);
+            while (ran == 5) { ran = (int)Random.Range(0, 7); }
+            set_npc(ran);
         }
         else
         {
-            set_npc(0);
+            set_npc(5);
         }
     }
     public void set_npc(int index)
     {
         npc.count = 0;
         npc.name_Npc = npcs[index].name;
+        npc.story = npcs[index].story;
         npc.conversation = npcs[index].conversation;
         npc.command = npcs[index].command;
     }

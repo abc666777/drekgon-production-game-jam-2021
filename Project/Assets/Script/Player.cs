@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public Door door;
     public NPC npc;
     public Dialog dialog_box;
+    public qqq qqq;
 
     private float moveinput;
 
@@ -82,7 +83,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) && status_Npc)
         {
             walk = false;
-            npc.talk();
+            if (qqq.cho)
+            {
+                npc.talk();
+            }
         }
     }
 
