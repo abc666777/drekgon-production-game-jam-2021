@@ -8,6 +8,7 @@ public class bg_box : MonoBehaviour
     private Image img;
     public Game_System sys;
     public Bag bbb;
+    public Dialog dialog_box;
     void Start()
     {
         img = GetComponent<Image>();
@@ -28,17 +29,19 @@ public class bg_box : MonoBehaviour
 
     private void OnMouseDown()
     {
-        print("111111111111111111111111111111" + sys.count);
-        if (sys.count  > 11)
+        if (sys.count  == 11)
         {
-            print("22222222222222222222222222222");
             for (int i = 0; i < bbb.Mementos.Count; i++)
             {
                 if (bbb.Mementos[i].GetComponent<SpriteRenderer>().sprite == GetComponent<SpriteRenderer>().sprite)
                 {
+                    dialog_box.talking(bbb.Mementos[i].endding(), "");
+                    dialog_box.dialog_box.SetActive(true);
                     bbb.Mementos[i].endding();
+                    break;
                 }
             }
+            bbb.Action_Bag();
         }
     }
 }

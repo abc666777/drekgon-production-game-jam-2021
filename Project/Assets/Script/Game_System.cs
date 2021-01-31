@@ -33,10 +33,17 @@ public class Game_System : MonoBehaviour
     }
     public void give_Memento()
     {
-        mmt2.GetComponent<SpriteRenderer>().sprite = Bg_Mmt_List[(int)Random.Range(0, Bg_Mmt_List.Count)];
+        int ran = Random.Range(0, mmts.Count);
+        foreach(Sprite sp in Bg_Mmt_List)
+        {
+            if(sp.name == mmts[ran].name)
+            {
+                mmt2.GetComponent<SpriteRenderer>().sprite = sp;
+            }
+        }
         mmt = Instantiate(mmt2, new Vector3(-15, 10, 1), Quaternion.identity);
         mmt.transform.localScale = new Vector3(0.2f, 0.2f, 1);
-        int ran = Random.Range(0, mmts.Count);
+        
         mmt.name_Memoto = mmts[ran].name;
         mmt.name = mmts[ran].name;
         mmt.story = mmts[ran].story;
@@ -73,11 +80,12 @@ public class Game_System : MonoBehaviour
         {
             int ran = (int)Random.Range(0, 7);
             while (ran == 5) { ran = (int)Random.Range(0, 7); }
-            set_npc(ran);
+            //set_npc(ran);
+            set_npc(4);
         }
         else
         {
-            set_npc(5);
+            set_npc(7);
         }
     }
     public void set_npc(int index)
@@ -94,7 +102,7 @@ public class Game_System : MonoBehaviour
         string json;
         data_npc npc;
         data_mmt mmt;
-        for (int i = 1; i < 8; i++)
+        for (int i = 1; i < 9; i++)
         {
             json = File.ReadAllText(Application.dataPath + "/Json/npc_" + i + ".json");
             npc = JsonUtility.FromJson<data_npc>(json);

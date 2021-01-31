@@ -247,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!50 &53849535
 Rigidbody2D:
   serializedVersion: 4
@@ -463,6 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &112000554
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1235,6 +1237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &472844142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1521,6 +1524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &548490641
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1724,6 +1728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &579699124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1872,6 +1877,7 @@ MonoBehaviour:
   qqq: {fileID: 1844537320}
   en: {fileID: 1738605667}
   inn: 0
+  bbb: {fileID: 312428814}
 --- !u!212 &590282580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2085,6 +2091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &619644111
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2288,6 +2295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &795349454
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2491,6 +2499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &803979739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2750,7 +2759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98decf6894a90884e91b14b8f0be3e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mmt2: {fileID: 561691429016969057, guid: 98040307166183747bc11251d0bfdee3, type: 3}
+  mmt2: {fileID: 3872686931594575513, guid: fe229fdbcb3f2724594a9e427e86a1e8, type: 3}
   npc: {fileID: 590282579}
   py: {fileID: 1492215233}
   bag: {fileID: 312428814}
@@ -3138,6 +3147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &997544489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3632,6 +3642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &1331334201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3835,6 +3846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &1368268490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4038,6 +4050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &1368370144
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4334,6 +4347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &1395114629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4907,6 +4921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &1644322036
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5101,6 +5116,7 @@ MonoBehaviour:
   dialog_box: {fileID: 1670106343}
   name_n: {fileID: 1514764305}
   text: {fileID: 910506540}
+  mmt: {fileID: 0}
 --- !u!1 &1738605666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5470,6 +5486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sys: {fileID: 861438083}
   bbb: {fileID: 312428814}
+  dialog_box: {fileID: 1670106347}
 --- !u!222 &1846506887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5721,7 +5738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1957058398
 RectTransform:
   m_ObjectHideFlags: 0

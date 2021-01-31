@@ -20,6 +20,7 @@ public class NPC : MonoBehaviour
     public qqq qqq;
     public Encyclopedia en;
     public bool inn;
+    public Bag bbb;
 
 
     void Start()
@@ -46,7 +47,13 @@ public class NPC : MonoBehaviour
             dialog_box.StarDialog();
             py.walk = true;
         }
-        if (count != command.Count)
+        if (count != command.Count && command[count] == "e")
+        {
+            qqq_ui.SetActive(false);
+            bbb.status_Open = false; 
+            bbb.Action_Bag();
+        }
+        else if (count != command.Count)
         {
             foreach (string nnn in en.Npcs_n)
             {

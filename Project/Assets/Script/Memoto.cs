@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Memoto : MonoBehaviour
 {
@@ -21,8 +22,11 @@ public class Memoto : MonoBehaviour
 
     }
 
-    public void endding()
+    public string endding()
     {
-        print(ending);
+        return ending;
+        //dialog_box.dialog_box.SetActive(true);
+        //name_n.text = "";
+        //text.text = ending;
     }
 }

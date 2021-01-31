@@ -11,6 +11,7 @@ public class Dialog : MonoBehaviour
     public TextMeshProUGUI text;
     private bool status_talk = false;
     private bool stel;
+    public Memoto mmt;
 
     public void StarDialog()
     {
