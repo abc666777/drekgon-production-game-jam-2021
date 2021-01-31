@@ -1,0 +1,61 @@
+{
+      "npc": [
+        {
+          "name": "Phantom",
+          "story": "A lost soul, wandering in Empty Space, lost their own identity. Memento is the only thing that they are attached to, so as not to lose their identity over time.",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["I can't remember anythings, could you please give me a Memento please?", "Thank you, I shall not forget this kindness.", "You heartless soul, I wish you would be dead in this rotten place!"]
+        },
+        {
+          "name": "Collector",
+          "story": "A mysterious individual who has an obsession with keeping a Memento. Nobody knows who he/she or it is. He/she or it might offer you a Memento trade.",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["Hehehe... stranger, I have lot's of Memento, I shall give it to you, if you have something in return. Something that I want.", "hehehe, nice choice stranger."]
+        },
+        {
+          "name": "Spacewalker",
+          "story": "An abomination created by Empty Space itself, It attacks everything that stands in its way. Its power is beyond imagination. When it comes to contact, you shall sacrifice your precious “memories”.",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["I can't remember anythings, could you please give me a Memento please?","Memories...... Destroy...... Kill......"]
+        },
+        {
+          "name": "Mindflayer",
+          "story": "A vicious Phantom whose purpose is to flay the lost soul’s mind including you. The only purpose of its existence is to take your precious memories from you. Nobody knows what is it, even why does it exist.",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["I can't remember anythings, could you please give me a Memento please?", "Let me take it all away 'cause you seems to not need it"]
+        },
+        {
+          "name": "Phantom (With Memento)",
+          "story": "A phantom, already attached to a Memento, in contradiction to its own existence, he wants to rid of its own Memento to find a new one, Perhaps he might not fond of it.",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["I don't need this anymore, if you want it, I could give it to you."]
+        },
+        {
+          "name": "Guide",
+          "story": "An unknown individual who walks along with an Empty Space which might also be created by Empty Space or its the avatar of Empty Space itself. He does not have bad intent, his purpose is to guide a lost soul to its own path.",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["Perhaps you might find what you lost in here", "Beware of your journey, what you see might not be what you see."]
+        },
+        {
+          "name": "Echo",
+          "story": "An unknown force who chase you. Strangely enough, it doesn’t terrify you at all as it might also be a lost part of you, or is it?",
+          "img":"",
+          "true_img":"",
+          "command": [],
+          "conversation": ["OWUSDFSADKJSXIZKMDQWKELAQWESAEWSSDFGADFQWESADADQEWEWQWEQWEWQEASDDRQREQWR"]
+        }
+      ]
+
+  }

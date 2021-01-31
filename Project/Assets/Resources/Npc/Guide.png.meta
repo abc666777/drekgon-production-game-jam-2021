@@ -5,21 +5,6 @@ TextureImporter:
   - first:
       213: 855067733875592807
     second: Guide_0
-  - first:
-      213: -3499008042208567899
-    second: Guide_1
-  - first:
-      213: 6601503096322615672
-    second: Guide_2
-  - first:
-      213: -4973694085900715055
-    second: Guide_3
-  - first:
-      213: -3322336834360925763
-    second: Guide_4
-  - first:
-      213: 8868496416571056802
-    second: Guide_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,10 +93,10 @@ TextureImporter:
       name: Guide_0
       rect:
         serializedVersion: 2
-        x: 82
+        x: 81
         y: 49
         width: 57
-        height: 86
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,111 +106,6 @@ TextureImporter:
       bones: []
       spriteID: 76e8d88d29fcddb00800000000000000
       internalID: 855067733875592807
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guide_1
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 49
-        width: 57
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ad5ce169b6017fc0800000000000000
-      internalID: -3499008042208567899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guide_2
-      rect:
-        serializedVersion: 2
-        x: 544
-        y: 49
-        width: 57
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87963fff6104d9b50800000000000000
-      internalID: 6601503096322615672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guide_3
-      rect:
-        serializedVersion: 2
-        x: 775
-        y: 49
-        width: 57
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1db3d64a493e9fab0800000000000000
-      internalID: -4973694085900715055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guide_4
-      rect:
-        serializedVersion: 2
-        x: 1006
-        y: 49
-        width: 57
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db1a8bb6040b4e1d0800000000000000
-      internalID: -3322336834360925763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guide_5
-      rect:
-        serializedVersion: 2
-        x: 1237
-        y: 49
-        width: 57
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a2ea89e08a331b70800000000000000
-      internalID: 8868496416571056802
       vertices: []
       indices: 
       edges: []

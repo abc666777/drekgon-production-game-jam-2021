@@ -5,21 +5,6 @@ TextureImporter:
   - first:
       213: 555706738829966454
     second: Echo_0
-  - first:
-      213: -7202813787179902970
-    second: Echo_1
-  - first:
-      213: -1844855505027682234
-    second: Echo_2
-  - first:
-      213: 4198334989063046874
-    second: Echo_3
-  - first:
-      213: -5929916887368932069
-    second: Echo_4
-  - first:
-      213: 3251279673553639906
-    second: Echo_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,9 +94,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 65
+        y: 32
         width: 22
-        height: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,111 +106,6 @@ TextureImporter:
       bones: []
       spriteID: 67c304fa55446b700800000000000000
       internalID: 555706738829966454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Echo_1
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 64
-        width: 22
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6081bdfc5077a0c90800000000000000
-      internalID: -7202813787179902970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Echo_2
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 34
-        width: 22
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 640b6e051b1c566e0800000000000000
-      internalID: -1844855505027682234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Echo_3
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 33
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad64237cd6b734a30800000000000000
-      internalID: 4198334989063046874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Echo_4
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 1
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b15e8cc4204b4bda0800000000000000
-      internalID: -5929916887368932069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Echo_5
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 0
-        width: 22
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e9dc9713adde1d20800000000000000
-      internalID: 3251279673553639906
       vertices: []
       indices: 
       edges: []

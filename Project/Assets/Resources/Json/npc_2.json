@@ -1,0 +1,8 @@
+{
+          "name": "Collector",
+          "story": "A mysterious individual who has an obsession with keeping a Memento. Nobody knows who he/she or it is. He/she or it might offer you a Memento trade.",
+          "img":"",
+          "true_img":"",
+          "command": ["t", "c"],
+          "conversation": ["Hehehe... stranger, I have lot's of Memento, I shall give it to you, if you have something in return. Something that I want.", "hehehe, nice choice stranger."]
+        }

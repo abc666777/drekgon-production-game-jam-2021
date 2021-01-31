@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Linq;
+ using UnityEditor;
 
 public class Game_System : MonoBehaviour
 {
@@ -23,10 +24,11 @@ public class Game_System : MonoBehaviour
         npcs = new List<data_npc>();
         mmts = new List<data_mmt>();
         load_json();
-        set_npc(5);
         BackgroundList = Resources.LoadAll<Sprite>("Background").ToList();
         Bg_Mmt_List = Resources.LoadAll<Sprite>("Momento").ToList();
         sp_npc = Resources.LoadAll<Sprite>("Npc").ToList();
+        //print(sp_npc);
+        set_npc(5);
 
     }
 
@@ -92,9 +94,10 @@ public class Game_System : MonoBehaviour
     }
     public void set_npc(int index)
     {
+       
         foreach (Sprite sp in sp_npc)
         {
-            if (sp.name == npcs[index].name)
+            if (sp.name.Substring(0, sp.name.Length - 2) == npcs[index].name)
             {
                 npc.GetComponent<SpriteRenderer>().sprite = sp;
                 break;
@@ -114,14 +117,20 @@ public class Game_System : MonoBehaviour
         data_mmt mmt;
         for (int i = 1; i < 9; i++)
         {
-            json = File.ReadAllText(Application.dataPath + "/Json/npc_" + i + ".json");
-            npc = JsonUtility.FromJson<data_npc>(json);
+            string path = "Json/npc_" + i;
+            string filePath = path.Replace(".json", "");
+            TextAsset targetFile = Resources.Load<TextAsset>(filePath) as TextAsset;
+            //json = File.ReadAllText(Resources.Load + "/Json/npc_" + i + ".json");
+            npc = JsonUtility.FromJson<data_npc>(targetFile.text);
             npcs.Add(npc);
         }
         for (int i = 1; i < 12; i++)
         {
-            json = File.ReadAllText(Application.dataPath + "/Json/mmt_" + i + ".json");
-            mmt = JsonUtility.FromJson<data_mmt>(json);
+            string path = "Json/mmt_" + i;
+            string filePath = path.Replace(".json", "");
+            TextAsset targetFile = Resources.Load<TextAsset>(filePath) as TextAsset;
+            //json = File.ReadAllText(Application.dataPath + "Json/mmt_" + i + ".json");
+            mmt = JsonUtility.FromJson<data_mmt>(targetFile.text);
             mmts.Add(mmt);
         }
     }
