@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
 {
     private double x_Coordinate;
     private double y_Coordinate;
-    public Room room;
+    public Game_System sys;
     private bool status_talk = false;
 
     public Animator transitionAnim;
@@ -34,7 +34,7 @@ public class Door : MonoBehaviour
         if (status_talk)
         {
             print("It is a door");
-            room.random_bg();
+            sys.random_bg();
             StartCoroutine(LoadScene());
         }
         else

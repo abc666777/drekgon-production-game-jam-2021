@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private float y_Coordinate;
     private bool status_Door = false;
     private bool status_Npc = false;
+    public bool walk;
     public Bag bag;
     public Encyclopedia encyclopedia;
     public Door door;
@@ -39,17 +40,24 @@ public class Player : MonoBehaviour
     
     void Start()
     {
-        
+        walk = true;
     }
 
     void Update()
     {
         moveinput = Input.GetAxis("Horizontal"); // move Horizontal
         //Debug.Log(moveinput);
+        if (!walk)
+        {
+            moveinput = 0;
+        }
         rb.velocity = new Vector2(moveinput * move_Speed, rb.velocity.y);
-        if (facing == true && moveinput < 0) {
+        if (facing == true && moveinput < 0)
+        {
             Flip();
-        }else if (facing == false && moveinput > 0) {
+        }
+        else if (facing == false && moveinput > 0)
+        {
             Flip();
         }
 
@@ -73,6 +81,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Return) && status_Npc)
         {
+            walk = false;
             npc.talk();
         }
     }

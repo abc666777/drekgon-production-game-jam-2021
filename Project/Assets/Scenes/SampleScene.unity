@@ -208,7 +208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 53849530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &53849535
@@ -312,10 +312,10 @@ GameObject:
   - component: {fileID: 112000549}
   - component: {fileID: 112000554}
   - component: {fileID: 112000553}
-  - component: {fileID: 112000552}
   - component: {fileID: 112000551}
   - component: {fileID: 112000550}
   - component: {fileID: 112000555}
+  - component: {fileID: 112000552}
   m_Layer: 5
   m_Name: bag_box (4)
   m_TagString: Untagged
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 112000548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &112000553
@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 127855297}
   - component: {fileID: 127855296}
   - component: {fileID: 127855293}
+  - component: {fileID: 127855294}
   m_Layer: 5
   m_Name: bag_box (2)
   m_TagString: Untagged
@@ -562,6 +563,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &127855294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127855291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &127855296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cdf1568a4d8d3f46ae232bd9e0635e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 1754676444}
+  sys: {fileID: 861438083}
   transitionAnim: {fileID: 1959541423}
   sceneName: Scenc
 --- !u!212 &345877016
@@ -996,7 +1009,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 472844136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &472844141
@@ -1259,7 +1272,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 548490635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &548490640
@@ -1439,7 +1452,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 579699118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &579699123
@@ -1555,13 +1568,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name_Npc: 
-  ID: 0
+  count: 0
   npc_sentences: []
+  command: []
   conversation: []
   rb_npc: {fileID: 0}
   door: {fileID: 345877015}
   sys: {fileID: 861438083}
   dialog_box: {fileID: 1670106347}
+  py: {fileID: 1492215233}
 --- !u!212 &590282580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1684,10 +1699,10 @@ GameObject:
   - component: {fileID: 619644106}
   - component: {fileID: 619644111}
   - component: {fileID: 619644110}
-  - component: {fileID: 619644109}
   - component: {fileID: 619644108}
   - component: {fileID: 619644107}
   - component: {fileID: 619644112}
+  - component: {fileID: 619644109}
   m_Layer: 5
   m_Name: bag_box (3)
   m_TagString: Untagged
@@ -1770,7 +1785,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 619644105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &619644110
@@ -1950,7 +1965,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 795349448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &795349453
@@ -2130,7 +2145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 803979733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &803979738
@@ -2371,9 +2386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98decf6894a90884e91b14b8f0be3e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mmt2: {fileID: 561691429016969057, guid: 98040307166183747bc11251d0bfdee3, type: 3}
   npc: {fileID: 590282579}
   py: {fileID: 1492215233}
-  bag: {fileID: 0}
+  bag: {fileID: 312428814}
+  room: {fileID: 1754676444}
 --- !u!4 &861438084
 Transform:
   m_ObjectHideFlags: 0
@@ -2454,7 +2471,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2586,8 +2603,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2665,10 +2682,10 @@ GameObject:
   - component: {fileID: 997544484}
   - component: {fileID: 997544489}
   - component: {fileID: 997544488}
-  - component: {fileID: 997544487}
   - component: {fileID: 997544486}
   - component: {fileID: 997544485}
   - component: {fileID: 997544490}
+  - component: {fileID: 997544487}
   m_Layer: 5
   m_Name: bag_box (1)
   m_TagString: Untagged
@@ -2751,7 +2768,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 997544483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &997544488
@@ -3071,7 +3088,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1331334195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1331334200
@@ -3251,7 +3268,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368268484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1368268489
@@ -3431,7 +3448,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368370138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1368370143
@@ -3681,6 +3698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_Speed: 5
   sys: {fileID: 861438083}
+  walk: 0
   bag: {fileID: 312428814}
   encyclopedia: {fileID: 1738605667}
   door: {fileID: 345877015}
@@ -4072,7 +4090,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1644322030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1644322035
@@ -4246,6 +4264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences: []
   dialog_box: {fileID: 1670106343}
+  name: {fileID: 1514764303}
+  text: {fileID: 910506538}
 --- !u!1 &1738605666
 GameObject:
   m_ObjectHideFlags: 0
@@ -4558,7 +4578,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846506881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87a69a184c42748aba025aa26edc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 913421b2a8c74c545bc1afbec814ea89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1846506886

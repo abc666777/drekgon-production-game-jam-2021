@@ -6,6 +6,8 @@ public class Dialog : MonoBehaviour
 {
     public string[] sentences;
     public GameObject dialog_box;
+    public GameObject name;
+    public GameObject text;
     private bool status_talk = false;
 
     public void StarDialog()
@@ -16,12 +18,14 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    public void talking(string txt, string n) {
+        print(n + " : " + txt);
     }
 }

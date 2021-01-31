@@ -3,6 +3,6 @@
           "story": "A vicious Phantom whose purpose is to flay the lost soul’s mind including you. The only purpose of its existence is to take your precious memories from you. Nobody knows what is it, even why does it exist.",
           "img":"",
           "true_img":"",
-          "command": [],
+          "command": ["q", "a"],
           "conversation": ["I can't remember anythings, could you please give me a Memento please?", "Let me take it all away 'cause you seems to not need it"]
         }

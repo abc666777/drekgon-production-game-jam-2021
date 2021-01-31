@@ -9,6 +9,7 @@ public class Bag : MonoBehaviour
     public bag_bg bg;
     void Start()
     {
+        Mementos = new List<Memoto>();
     }
 
     void Update()

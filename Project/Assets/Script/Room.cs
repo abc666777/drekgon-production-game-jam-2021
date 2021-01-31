@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Linq;
+﻿using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    private List<Sprite> BackgroundList;
+
     void Start()
     {
     
@@ -16,10 +13,5 @@ public class Room : MonoBehaviour
     {
         
     }
-    public void random_bg()
-    {
-        BackgroundList = Resources.LoadAll<Sprite>("Background").ToList();
-        GetComponent<SpriteRenderer>().sprite = BackgroundList[(int)Random.Range(0, BackgroundList.Count)];
 
-    }
 }

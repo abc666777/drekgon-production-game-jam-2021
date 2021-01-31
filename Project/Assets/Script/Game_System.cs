@@ -2,20 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System.Linq;
 
 public class Game_System : MonoBehaviour
 {
     public List<data_npc> npcs;
     public List<data_mmt> mmts;
+    private Memoto mmt;
+    public Memoto mmt2;
     public NPC npc;
     public Player py;
     public Bag bag;
+    private List<Sprite> BackgroundList;
+    private List<Sprite> Bg_Mmt_List;
+    public Room room;
+    private int count = 0;
     void Start()
     {
         npcs = new List<data_npc>();
         mmts = new List<data_mmt>();
         load_json();
         set_npc(5);
+        BackgroundList = Resources.LoadAll<Sprite>("Background").ToList();
+        Bg_Mmt_List = Resources.LoadAll<Sprite>("Momento").ToList();
 
     }
 
@@ -23,15 +32,59 @@ public class Game_System : MonoBehaviour
     {
         
     }
+    public void give_Memento()
+    {
+        mmt2.GetComponent<SpriteRenderer>().sprite = Bg_Mmt_List[(int)Random.Range(0, Bg_Mmt_List.Count)];
+        mmt = Instantiate(mmt2, new Vector3(-15, 10, 1), Quaternion.identity);
+        mmt.transform.localScale = new Vector3(0.2f, 0.2f, 1);
+        int ran = Random.Range(0, mmts.Count);
+        mmt.name_Memoto = mmts[ran].name;
+        mmt.story = mmts[ran].story;
+        mmt.ending = mmts[ran].ending;
+        bag.Mementos.Add(mmt);
+    }
+
+    public void take_Memento(string type)
+    {
+        if (bag.Mementos.Count != 0) { 
+            if (type == "a")
+            {
+                for (int i = 0; i < bag.Mementos.Count; i++)
+                {
+                    Destroy(bag.Mementos[0]);
+                    bag.Mementos.RemoveAt(0);
+                }
+            }else if (type == "c")
+            {
+
+            }
+            else
+            {
+                int ran = Random.Range(0, bag.Mementos.Count);
+                Destroy(bag.Mementos[ran]);
+                bag.Mementos.RemoveAt(ran);
+            }
+        }
+    }
 
     public void ran_npc()
     {
-        set_npc((int)Random.Range(0, 7));
+        npc.gameObject.SetActive(true);
+        if (count < 11)
+        {
+            set_npc((int)Random.Range(0, 7));
+        }
+        else
+        {
+            set_npc(0);
+        }
     }
     public void set_npc(int index)
     {
+        npc.count = 0;
         npc.name_Npc = npcs[index].name;
         npc.conversation = npcs[index].conversation;
+        npc.command = npcs[index].command;
     }
 
     public void load_json()
@@ -50,6 +103,18 @@ public class Game_System : MonoBehaviour
             json = File.ReadAllText(Application.dataPath + "/Json/mmt_" + i + ".json");
             mmt = JsonUtility.FromJson<data_mmt>(json);
             mmts.Add(mmt);
+        }
+    }
+    public void random_bg()
+    {
+        if (count < 11)
+        {
+            room.GetComponent<SpriteRenderer>().sprite = BackgroundList[(int)Random.Range(0, BackgroundList.Count)];
+            count++;
+        }
+        else
+        {
+            room.GetComponent<SpriteRenderer>().sprite = BackgroundList[0];
         }
     }
 
