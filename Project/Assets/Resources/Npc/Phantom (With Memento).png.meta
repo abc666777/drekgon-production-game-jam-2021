@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: d6c04970f9a00a2468224121dd3b62e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8270854081711145520
+    second: Phantom (With Memento)_0
+  - first:
+      213: 2246511563454278701
+    second: Phantom (With Memento)_1
+  - first:
+      213: -3922460791361207135
+    second: Phantom (With Memento)_2
+  - first:
+      213: 6731526874745251892
+    second: Phantom (With Memento)_3
+  - first:
+      213: -5131357073979393520
+    second: Phantom (With Memento)_4
+  - first:
+      213: 2670383540816110885
+    second: Phantom (With Memento)_5
+  - first:
+      213: 7819595488702108913
+    second: Phantom (With Memento)_6
+  - first:
+      213: 8370199922351421087
+    second: Phantom (With Memento)_7
+  - first:
+      213: -5421766694143383277
+    second: Phantom (With Memento)_8
+  - first:
+      213: 2827376963568744076
+    second: Phantom (With Memento)_9
+  - first:
+      213: -981211252660258811
+    second: Phantom (With Memento)_10
+  - first:
+      213: -4767431792423108524
+    second: Phantom (With Memento)_11
+  - first:
+      213: -8632761585831083355
+    second: Phantom (With Memento)_12
+  - first:
+      213: 4064202041175051700
+    second: Phantom (With Memento)_13
+  - first:
+      213: -5406354723332608026
+    second: Phantom (With Memento)_14
+  - first:
+      213: 7878832289098170416
+    second: Phantom (With Memento)_15
+  - first:
+      213: 1602176961600453463
+    second: Phantom (With Memento)_16
+  - first:
+      213: 9148923266878089188
+    second: Phantom (With Memento)_17
+  - first:
+      213: 6549658290069136574
+    second: Phantom (With Memento)_18
+  - first:
+      213: 5859593726867309223
+    second: Phantom (With Memento)_19
+  - first:
+      213: -5470903812088779700
+    second: Phantom (With Memento)_20
+  - first:
+      213: -3711046440980380645
+    second: Phantom (With Memento)_21
+  - first:
+      213: -8089592611850051579
+    second: Phantom (With Memento)_22
+  - first:
+      213: -6774020172181227849
+    second: Phantom (With Memento)_23
+  - first:
+      213: 7407190539010470596
+    second: Phantom (With Memento)_24
+  - first:
+      213: 1943900908792177828
+    second: Phantom (With Memento)_25
+  - first:
+      213: 4519617058310204114
+    second: Phantom (With Memento)_26
+  - first:
+      213: 8871130853264287778
+    second: Phantom (With Memento)_27
+  - first:
+      213: 2227626175973882387
+    second: Phantom (With Memento)_28
+  - first:
+      213: 1897395778937448049
+    second: Phantom (With Memento)_29
+  - first:
+      213: 4962998668771330464
+    second: Phantom (With Memento)_30
+  - first:
+      213: -4644882201723861734
+    second: Phantom (With Memento)_31
+  - first:
+      213: -6664644757069235066
+    second: Phantom (With Memento)_32
+  - first:
+      213: -5242023395668219421
+    second: Phantom (With Memento)_33
+  - first:
+      213: -341105311716551508
+    second: Phantom (With Memento)_34
+  - first:
+      213: -1828552351550737052
+    second: Phantom (With Memento)_35
+  - first:
+      213: -7051493925436803639
+    second: Phantom (With Memento)_36
+  - first:
+      213: -1379628152469612923
+    second: Phantom (With Memento)_37
+  - first:
+      213: -471339795627188855
+    second: Phantom (With Memento)_38
+  - first:
+      213: -3236357515717664164
+    second: Phantom (With Memento)_39
+  - first:
+      213: -6138344273395689800
+    second: Phantom (With Memento)_40
+  - first:
+      213: 8211038420959231874
+    second: Phantom (With Memento)_41
+  - first:
+      213: 8002411191466598050
+    second: Phantom (With Memento)_42
+  - first:
+      213: 2626371767259252826
+    second: Phantom (With Memento)_43
+  - first:
+      213: -1171025343886297668
+    second: Phantom (With Memento)_44
+  - first:
+      213: 8368927756578807522
+    second: Phantom (With Memento)_45
+  - first:
+      213: 5327646931135053019
+    second: Phantom (With Memento)_46
+  - first:
+      213: -1732636559740458767
+    second: Phantom (With Memento)_47
+  - first:
+      213: 3913770032305754307
+    second: Phantom (With Memento)_48
+  - first:
+      213: -5350563023072003132
+    second: Phantom (With Memento)_49
+  - first:
+      213: 1582456957720355612
+    second: Phantom (With Memento)_50
+  - first:
+      213: 5272759019586886175
+    second: Phantom (With Memento)_51
+  - first:
+      213: 7959332441774531344
+    second: Phantom (With Memento)_52
+  - first:
+      213: 6651130988420955018
+    second: Phantom (With Memento)_53
+  - first:
+      213: -6142859698302534619
+    second: Phantom (With Memento)_54
+  - first:
+      213: 2175104274297894699
+    second: Phantom (With Memento)_55
+  - first:
+      213: -8383658842669862018
+    second: Phantom (With Memento)_56
+  - first:
+      213: -4499170367650283220
+    second: Phantom (With Memento)_57
+  - first:
+      213: 1971593924027834300
+    second: Phantom (With Memento)_58
+  - first:
+      213: 6182352314926538789
+    second: Phantom (With Memento)_59
+  - first:
+      213: 6290120072970144839
+    second: Phantom (With Memento)_60
+  - first:
+      213: -5380717717434380373
+    second: Phantom (With Memento)_61
+  - first:
+      213: -2022101287242181612
+    second: Phantom (With Memento)_62
+  - first:
+      213: 5198354141042742142
+    second: Phantom (With Memento)_63
+  - first:
+      213: -5349951394488661413
+    second: Phantom (With Memento)_64
+  - first:
+      213: 8548573511803711505
+    second: Phantom (With Memento)_65
+  - first:
+      213: 4170964839728265522
+    second: Phantom (With Memento)_66
+  - first:
+      213: 1811297348607313783
+    second: Phantom (With Memento)_67
+  - first:
+      213: 2259774396177831298
+    second: Phantom (With Memento)_68
+  - first:
+      213: -4032617011710387966
+    second: Phantom (With Memento)_69
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Phantom (With Memento)_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 86
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cef7b4d563d2f10800000000000000
+      internalID: 2246511563454278701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 86
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a35c5ade1c9c8b0800000000000000
+      internalID: -5131357073979393520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 88
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9632ce6b7ce82470800000000000000
+      internalID: 8370199922351421087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 86
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508b19b70990262f0800000000000000
+      internalID: -981211252660258811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 86
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd08af2932f66830800000000000000
+      internalID: 4064202041175051700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 65
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b728735731c3610800000000000000
+      internalID: 1602176961600453463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 67
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2880af275715150800000000000000
+      internalID: 5859593726867309223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_22
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 65
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500ad09416efbbf80800000000000000
+      internalID: -8089592611850051579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4ed1bc39f1afa10800000000000000
+      internalID: 1943900908792177828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 65
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31af84f543e1aee10800000000000000
+      internalID: 2227626175973882387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 45
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1507b64f301a8fb0800000000000000
+      internalID: -4644882201723861734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_34
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 44
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4d228b686244bf0800000000000000
+      internalID: -341105311716551508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_37
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 43
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5869be141839adce0800000000000000
+      internalID: -1379628152469612923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_40
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 43
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6523bd76830daa0800000000000000
+      internalID: -6138344273395689800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_43
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 43
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a584a9b053fb27420800000000000000
+      internalID: 2626371767259252826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 22
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee59c14477642470800000000000000
+      internalID: 8368927756578807522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_47
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 25
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8a0d39a3074f7e0800000000000000
+      internalID: -1732636559740458767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_48
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 24
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0572cbb11805630800000000000000
+      internalID: 3913770032305754307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 22
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbf37d674bfeb5b0800000000000000
+      internalID: -5350563023072003132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_51
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 25
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a96bc546a9c2940800000000000000
+      internalID: 5272759019586886175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf5ffa5a328c5b10800000000000000
+      internalID: 1971593924027834300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_59
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520a287cca02cc550800000000000000
+      internalID: 6182352314926538789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_61
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf4ca78eb9d355b0800000000000000
+      internalID: -5380717717434380373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phantom (With Memento)_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ac5ed4d8721c5b0800000000000000
+      internalID: -5349951394488661413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
