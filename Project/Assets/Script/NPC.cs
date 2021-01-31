@@ -52,7 +52,6 @@ public class NPC : MonoBehaviour
             {
                 if (nnn != name_Npc)
                 {
-                    print(nnn +" : " +name_Npc);
                     inn = true;
                 }
             }

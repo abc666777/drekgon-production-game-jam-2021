@@ -23,6 +23,6 @@ public class Memoto : MonoBehaviour
 
     public void endding()
     {
-
+        print(ending);
     }
 }

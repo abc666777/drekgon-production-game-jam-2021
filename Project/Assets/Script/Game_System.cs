@@ -16,7 +16,7 @@ public class Game_System : MonoBehaviour
     private List<Sprite> BackgroundList;
     private List<Sprite> Bg_Mmt_List;
     public Room room;
-    private int count = 0;
+    public int count = 0;
     void Start()
     {
         npcs = new List<data_npc>();
@@ -69,7 +69,7 @@ public class Game_System : MonoBehaviour
     public void ran_npc()
     {
         npc.gameObject.SetActive(true);
-        if (count < 12)
+        if (count < 11)
         {
             int ran = (int)Random.Range(0, 7);
             while (ran == 5) { ran = (int)Random.Range(0, 7); }

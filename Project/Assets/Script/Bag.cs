@@ -7,6 +7,8 @@ public class Bag : MonoBehaviour
     public List<Memoto> Mementos;
     public bool status_Open = false;
     public bag_bg bg;
+    public List<bg_box> bb;
+    public bg_box df;
     void Start()
     {
         Mementos = new List<Memoto>();
@@ -20,32 +22,26 @@ public class Bag : MonoBehaviour
     {
         if (!status_Open)
         {
-            print("Open bag");
             bg.show_bg();
             status_Open = !status_Open;
+            show();
         }
         else
         {
-            print("Close bag");
             bg.hide_bg();
             status_Open = !status_Open;
         }
     }
 
-    public void Set_Mementos(Memoto item)
+    public void show()
     {
-        Mementos.Add(item);
-    }
-
-    public Memoto Get_Mementos()
-    {
-        if (Mementos.Count == 0)
+        for(int i = 0;i < Mementos.Count; i++)
         {
-            return null;
+            bb[i].GetComponent<SpriteRenderer>().sprite = Mementos[i].GetComponent<SpriteRenderer>().sprite;
         }
-        else
+        for (int i = Mementos.Count; i < 15; i++)
         {
-            return Mementos[0];
+            bb[i].GetComponent<SpriteRenderer>().sprite = df.GetComponent<SpriteRenderer>().sprite;
         }
     }
 

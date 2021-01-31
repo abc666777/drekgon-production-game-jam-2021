@@ -24,7 +24,6 @@ public class Encyclopedia : MonoBehaviour
 
     void Update()
     {
-        print(count + " : " + Npcs_n.Count);
         if (Input.GetKeyDown(KeyCode.RightArrow) && (count < Npcs_n.Count-1))
         {
                count++;
@@ -41,13 +40,11 @@ public class Encyclopedia : MonoBehaviour
     {
         if (!status_Open)
         {
-            print("Open encyclopedia");
             status_Open = !status_Open;
             show_data();
         }
         else
         {
-            print("Close encyclopedia");
             status_Open = !status_Open;
         }
         encyclopedia_ui.SetActive(status_Open);

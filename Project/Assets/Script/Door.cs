@@ -33,7 +33,6 @@ public class Door : MonoBehaviour
     {
         if (status_talk)
         {
-            print("It is a door");
             sys.random_bg();
             StartCoroutine(LoadScene());
         }
