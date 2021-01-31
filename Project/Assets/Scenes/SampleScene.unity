@@ -4521,7 +4521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903b9ae501ed4304aa904d3a0fdbc0c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_Speed: 10
+  move_Speed: 5
   sys: {fileID: 861438083}
   walk: 0
   bag: {fileID: 312428814}

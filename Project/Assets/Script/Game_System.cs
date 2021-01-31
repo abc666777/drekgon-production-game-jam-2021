@@ -14,6 +14,7 @@ public class Game_System : MonoBehaviour
     public Player py;
     public Bag bag;
     private List<Sprite> BackgroundList;
+    private List<Sprite> sp_npc;
     private List<Sprite> Bg_Mmt_List;
     public Room room;
     public int count = 0;
@@ -25,6 +26,7 @@ public class Game_System : MonoBehaviour
         set_npc(5);
         BackgroundList = Resources.LoadAll<Sprite>("Background").ToList();
         Bg_Mmt_List = Resources.LoadAll<Sprite>("Momento").ToList();
+        sp_npc = Resources.LoadAll<Sprite>("Npc").ToList();
 
     }
 
@@ -39,6 +41,7 @@ public class Game_System : MonoBehaviour
             if(sp.name == mmts[ran].name)
             {
                 mmt2.GetComponent<SpriteRenderer>().sprite = sp;
+                break;
             }
         }
         mmt = Instantiate(mmt2, new Vector3(-15, 10, 1), Quaternion.identity);
@@ -80,8 +83,7 @@ public class Game_System : MonoBehaviour
         {
             int ran = (int)Random.Range(0, 7);
             while (ran == 5) { ran = (int)Random.Range(0, 7); }
-            //set_npc(ran);
-            set_npc(4);
+            set_npc(ran);
         }
         else
         {
@@ -90,6 +92,14 @@ public class Game_System : MonoBehaviour
     }
     public void set_npc(int index)
     {
+        foreach (Sprite sp in sp_npc)
+        {
+            if (sp.name == npcs[index].name)
+            {
+                npc.GetComponent<SpriteRenderer>().sprite = sp;
+                break;
+            }
+        }
         npc.count = 0;
         npc.name_Npc = npcs[index].name;
         npc.story = npcs[index].story;
